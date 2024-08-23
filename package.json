@@ -1,0 +1,35 @@
+{
+  "name": "oeffimonitor",
+  "version": "0.1.2",
+  "description": "Displays an info screen with the next Wiener Linien public transport connections nearby.",
+  "main": "server/httpd.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "NODE_ENV='production' node server/httpd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metalab/oeffimonitor"
+  },
+  "author": "Metalab (https://metalab.at)",
+  "contributors": [
+    "Bernhard Hayden <hello@nini.su> (https://github.com/burnoutberni)",
+    "Moritz Wilhelmy (http://barfooze.de)",
+    "Jascha Ehrenreich <jascha@jaeh.at> (https://jaeh.at)"
+  ],
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/metalab/oeffimonitor/issues"
+  },
+  "homepage": "https://github.com/metalab/oeffimonitor",
+  "dependencies": {
+    "apicache": "^0.8.1",
+    "axios": "^1.3.4",
+    "cheerio": "^1.0.0-rc.12",
+    "child_process": "^1.0.2",
+    "express": "^4.14.0",
+    "fast-xml-parser": "^4.1.3"
+  }
+}

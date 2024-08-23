@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="update.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<link href="oeffis.css" type="text/css" rel="stylesheet">
+		<title>&Ouml;ffimonitor</title>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Nächste Öffi-Verbindungen<span id="currentTime"></span></h1>
+			<table id="overview">
+				<thead>
+					<tr>
+						<td>Abfahrt</td>
+						<td>Linie</td>
+						<td>Haltestelle</td>
+						<td>Richtung</td>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<div id="warning">
+			<p>
+				<span id="warning_counter"></span>
+				<span id="warning_text"></span>
+			</p>
+		</div>
+		<div id="error">
+			<p>
+				<b>Oh nein, ein Error!</b>
+				<span id="error_msg"></span>
+				&bull; Letztes Update:
+				<span id="error_last_update"></span>
+			</p>
+		</div>
+	</body>
+</html>
